@@ -281,15 +281,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         x, y, w, h = cv2.boundingRect(contour)
                         # Filtrer les contours en fonction de leur taille, forme, etc.
                         if w > 50 and h > 50:
-                            # Ajouter les coordonnées du rectangle englobant vert à la liste
-                            #if (x > 15):
-                             #   x -= 15
-                              #  w += 30
-                               # h += 30
-                            #if (y > 15):
-                             #   y -= 15
-                              #  w += 30
-                               # h += 30
                             green_rectangles.append((x, y, w, h))
 
                 # Vérifier si la touche 'l' est enfoncée pour effacer les objets
